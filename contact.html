@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+</head>
+<body>
+  <header>
+    <section id="home"></section>
+    <img src="media/build_with_olu_logo.jpg" alt="logo" width="280px">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </section>
+    
+  </header>
+  <main>
+    <section>
+      <h1>Join Us</h1>
+      <p><strong>Join our team and make that bold step towards a rewarding career in the tech industry today!!.</strong></p>
+    </section>
+    <br>
+    <section>
+      <h2>Personal Information</h2>
+      <form action="submit_form.php" method="post">
+        <hr>
+        <p>Name</p>
+        <input type="text" id="name" size="50" name="name" placeholder="Your full Name" required><br>
+
+        <p>Email</p>
+        <input type="email" id="email" size="50" placeholder="noname@example.com" name="email" required><br>
+        
+        <p>Password</p>
+        <input type="password" id="password" size="50" placeholder="Your Password" name="password" required><br><br>
+
+        <label >Gender:
+          <input type="radio" id="male" name="gender" value="male" required>Male
+          <input type="radio" id="other" name="gender" value="female" required>Female
+          <br><br><br>
+        </label>
+
+        <label>Hobbies: <br><br>
+          <input type="checkbox" id="hobbies" name="hobbies" value="coding">Online Coding<br>
+          <input type="checkbox" id="hobbies" name="hobbies" value="gaming">Gaming<br>
+          <input type="checkbox" id="hobbies" name="hobbies" value="sports">Sports<br>
+        
+
+        </label><br><br>
+
+        <!--dropdown-->
+        <select name="country" id="country" required>
+          <option value="">Select Country</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="ghana">Ghana</option>
+          <option value="kenya">Kenya</option>
+          <option value="south_africa">South Africa</option>
+        </select><br><br>
+
+        <select name="Track" id="Track" required>
+          <option value="">Select Track</option>
+          <option value="Webdev">Web Development</option>
+          <option value="DataAnalysis">Data Analysis</option>
+          <option value="Networking">Networking</option>
+          <option value="UI/UX Design">UI/UX Design</option>
+        </select><br><br>
+
+        <!--Text area-->
+        <p>Leave aMessage</p>
+        <textarea id="message" name="message" rows="10" cols="30" placeholder="Write your problems here.." required></textarea><br>
+          <br><br><br>
+        <input type="submit" value="Submit form">
+
+      </form>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer><br>
+   <h4>Explore</h4>
+    <li><a href="#home">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="index.html#courses">Courses</a></li>
+    <hr>
+   <p>&copy; 2024 Build_with_Olu. All rights reserved.</p>
+  </footer>
+</body>
+</html>
